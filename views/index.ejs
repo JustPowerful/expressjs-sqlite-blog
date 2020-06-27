@@ -19,15 +19,15 @@
         
         
         
-        <!-- <%= post.id %> -->
+        <!-- <%= post.rowid %> -->
 
         <div class="simple-space col-sm-6">
             <div class="card">
               <div class="card-body">
-                <h4><span class="badge badge-dark"><%= post.id %></span> <%= Truncate(post.title, 50)%></h4>
+                <h4><span class="badge badge-dark"><%= post.rowid %></span> <%= Truncate(post.title, 50)%></h4>
                 <p class="date"> <%= post.post_date %></p>
                 <!-- <p class="card-text"><%= Truncate(post.content, 200) %></p> -->
-                <a href="/post/<%= post.id %>" class="btn btn-dark">Read</a>
+                <a href="/post/<%= post.rowid %>" class="btn btn-dark">Read</a>
                 
                 
                 <% if(verified) { %>
@@ -37,8 +37,8 @@
                       Actions
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="/edit/<%= post.id %>">Edit</a>
-                      <a class="dropdown-item" href="/delete/<%= post.id %>">Delete</a>
+                      <a class="dropdown-item" href="/edit/<%= post.rowid %>">Edit</a>
+                      <a class="dropdown-item" href="/delete/<%= post.rowid %>">Delete</a>
                     </div>
                   </div>
                 <% } %>
