@@ -2,4 +2,4 @@
 a simple blog using nodejs express and sqlite3
 
 ## Custom Versions ?
-- [expressjs-sqlite-blog](https://github.com/JustPowerful/expressjs-mysql-blog)
+- [expressjs-mysql-blog](https://github.com/JustPowerful/expressjs-mysql-blog)
